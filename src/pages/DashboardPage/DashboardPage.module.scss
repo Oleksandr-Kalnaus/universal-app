@@ -1,0 +1,34 @@
+@import '../../assets/styles/_variables';
+
+.dashboard {
+  padding: $spacing-xl;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-xl;
+}
+
+.widgetsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $spacing-lg;
+  width: 100%;
+}
+
+.widget-container {
+  height: 100%;
+}
+
+@media (max-width: $tablet) {
+  .dashboard {
+    padding: $spacing-md;
+  }
+
+  .widgetsGrid {
+    grid-template-columns: 1fr;
+  }
+}

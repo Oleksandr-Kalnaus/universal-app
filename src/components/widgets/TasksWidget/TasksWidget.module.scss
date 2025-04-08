@@ -1,0 +1,55 @@
+@import '../../../assets/styles/_variables';
+
+.tasksWidget {
+  background: white;
+  border-radius: 8px;
+  padding: $spacing-md;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &.widget {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  h3 {
+    margin-top: 0;
+    color: $primary-color;
+  }
+
+  .taskInput {
+    display: flex;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-md;
+  }
+
+  .taskList {
+    flex-grow: 1;
+    padding: 0;
+  }
+
+  .taskItem {
+    padding: $spacing-xs 0;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .taskText {
+    flex-grow: 1;
+    margin: 0 $spacing-sm;
+
+    &.completed {
+      text-decoration: line-through;
+      color: #888;
+    }
+  }
+
+  .deleteButton {
+    color: #f44336;
+  }
+
+  .viewAll {
+    margin-top: $spacing-md;
+  }
+}

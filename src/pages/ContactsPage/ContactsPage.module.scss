@@ -1,0 +1,35 @@
+@import '../../assets/styles/_variables.scss';
+
+.contactsPage {
+    padding: $spacing-xl 0;
+
+    .controls {
+        display: flex;
+        gap: $spacing-md;
+        margin: $spacing-lg 0;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+    }
+
+    .contactsList {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .contactItem {
+        padding: $spacing-md;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+
+    .avatar {
+        background-color: $primary-color;
+        margin-right: $spacing-md;
+    }
+}
