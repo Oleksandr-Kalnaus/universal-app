@@ -1,0 +1,15 @@
+@import "../../../assets/styles/_variables";
+
+.contactsList {
+  padding: 0;
+}
+
+.contactItem {
+  padding: $spacing-xs $spacing-sm;
+}
+
+.avatar {
+  background-color: $primary-color;
+  color: white;
+  margin-right: $spacing-sm;
+}

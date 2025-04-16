@@ -12,8 +12,7 @@ const TasksPage = React.lazy(() => import('./pages/TasksPage/TasksPage.jsx'))
 const ContactsPage = React.lazy(() => import('./pages/ContactsPage/ContactsPage.jsx'))
 const CalendarPage = React.lazy(() => import('./pages/CalendarPage/CalendarPage.jsx'))
 const NotesPage = React.lazy(() => import('./pages/NotesPage/NotesPage.jsx'))
-const LoginPage = React.lazy(() => import('./pages/AuthPage/Login.jsx'))
-const RegisterPage = React.lazy(() => import('./pages/AuthPage/RegisterPage.jsx'))
+
 
 function App() {
   return (
@@ -21,9 +20,6 @@ function App() {
         <CssBaseline />
         <Suspense fallback={<Loader fullScreen />}>
           <Routes>
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
-
             <Route element={<Layout />}>
               <Route element={<ProtectedRoute />}>
                 <Route path="/" element={<DashboardPage />} />
